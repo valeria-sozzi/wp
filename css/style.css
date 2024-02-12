@@ -1,0 +1,114 @@
+*{
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+header,
+footer{
+    width: 1000px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: relative;
+}
+
+header > .orange:first-child{
+    background-color: darkgoldenrod;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+header > .orange:last-child{
+    background-color: darkgoldenrod;
+    width: 500px;
+    height: 25px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+main{
+    width: 1000px;
+    height: 800px;
+    background-color: brown;
+    margin: 20px auto;
+    position: relative;
+}
+
+main > .blue{
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top:200px;
+    left: 10px;
+}
+
+main > .senape{
+    width: 100%;
+    height: 200px;
+    background-color: darkkhaki;
+    position: absolute;
+    top:300px;
+    border-top: 10px solid green;
+    border-bottom: 10px solid green;
+}
+.container{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+.left,
+.right{
+    width: 25%;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+
+.center{
+    width: 50%;
+    height: 300px;
+    float: left;
+    position: relative;
+    padding: 0 10px;
+}
+
+.left > .pink, 
+.left > .senape, 
+.right > .pink, 
+.right > .senape, 
+.center > .pink{
+    width: 100%;
+    height: 120px;
+}
+.pink{
+    background-color: pink;
+}
+.senape{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+
+.left > .blue, 
+.right > .blue {
+    width:100%;
+    height: 60px;
+}
+
+.center > .senape{
+    width:100%;
+    height: 150px;
+}
+
+.center > .blue{
+    width:100%;
+    height: 30px;
+}
+
