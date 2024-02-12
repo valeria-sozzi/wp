@@ -43,7 +43,7 @@ footer{
 
 main{
     width: 1000px;
-    height: 1200px;
+    height: 1000px;
     margin: auto;
     position: relative;
 }
@@ -107,25 +107,20 @@ main > .title{
 
 .container{
     width: 100%;
-    height: 650px;
+    height: 450px;
     position: absolute;
     bottom: 0;
 }
 
 .left,
-.right{
-    width: 25%;
-    height: 650px;
+.right,
+.center,
+.center-right{
+    width: 23%;
+    height: 100%;
     float: left;
     position: relative;
-}
-
-.center{
-    width: 50%;
-    height: 650px;
-    float: left;
-    position: relative;
-    padding: 0 20px;
+    margin: 0 10px;
 }
 
 .img{
@@ -143,6 +138,9 @@ main > .title{
 .center > .img{
     background-image: url("../img/img-2.jpg");
 }
+.center-right > .img{
+    background-image: url("../img/banner.jpg"); 
+}
 
 .right > .img{
     background-image: url("../img/img-3.jpg");
@@ -150,6 +148,31 @@ main > .title{
 
 .container .box{
     height: 220px;
+}
+.invisible{
+    visibility: hidden;
+    width: 100%;
+    height: 220px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.invisible > img, 
+.invisible > .box{
+    width: 100%;
+    height: 220px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img:hover .invisible,
+.img:hover .box{
+    visibility: visible;
 }
 
 .container .title{
